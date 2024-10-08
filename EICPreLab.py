@@ -51,7 +51,7 @@ Ly = 0.2612 * (10 ** -9)
 for nx in range(1, 4): # Stops at n = LUMO
     for ny in range(1, 4):
         print("nx = " + str(nx) + ", ny = " + str(ny), file=f)
-        print(getEnergy(nx, ny, Lx, Ly), file=f)
+        print(str(getEnergy(nx, ny, Lx, Ly)) + " m", file=f)
 
 print("", file=f)
 print("", file=f)
@@ -67,5 +67,6 @@ Ly = 0.2612 * (10 ** -9)
 for nx in range(1, 4): # Stops at n = LUMO
     for ny in range(1, 4):
         print("nx = " + str(nx) + ", ny = " + str(ny), file=f)
-        print(getEnergy(nx, ny, Lx, Ly), file=f)
+        print(str(getEnergy(nx, ny, Lx, Ly)) + " m", file=f)
 
+f.close()
