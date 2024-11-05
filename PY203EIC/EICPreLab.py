@@ -20,9 +20,9 @@ def getEnergy(nx, ny, Ly, Lx):
 
     energy = e0constant * non_constant_component 
 
-    return energy
+    return f"{energy:.2e}"
 
-f = open("output.txt", "a")
+f = open("PY203EIC/output.txt", "a")
 
 print("Naphthalene: ", file=f)
 print ("HOMO: n = 2", file=f)
@@ -35,7 +35,7 @@ Ly = 0.2612 * (10 ** -9)
 for nx in range(1, 4): # Stops at n = LUMO
     for ny in range(1, 4):
         print("nx = " + str(nx) + ", ny = " + str(ny), file=f)
-        print(getEnergy(nx, ny, Lx, Ly), file=f)
+        print(str(getEnergy(nx, ny, Lx, Ly)) + " eV", file=f)
 
 print("", file=f)
 print("", file=f)
@@ -51,7 +51,7 @@ Ly = 0.2612 * (10 ** -9)
 for nx in range(1, 4): # Stops at n = LUMO
     for ny in range(1, 4):
         print("nx = " + str(nx) + ", ny = " + str(ny), file=f)
-        print(str(getEnergy(nx, ny, Lx, Ly)) + " m", file=f)
+        print(str(getEnergy(nx, ny, Lx, Ly)) + " eV", file=f)
 
 print("", file=f)
 print("", file=f)
@@ -67,6 +67,6 @@ Ly = 0.2612 * (10 ** -9)
 for nx in range(1, 4): # Stops at n = LUMO
     for ny in range(1, 4):
         print("nx = " + str(nx) + ", ny = " + str(ny), file=f)
-        print(str(getEnergy(nx, ny, Lx, Ly)) + " m", file=f)
+        print(str(getEnergy(nx, ny, Lx, Ly)) + " eV", file=f)
 
 f.close()
