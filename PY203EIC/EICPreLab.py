@@ -22,7 +22,7 @@ def getEnergy(nx, ny, Ly, Lx):
 
     return f"{energy:.2e}"
 
-f = open("PY203EIC/output.txt", "a")
+f = open("PY203EIC/PreLabOutput.txt", "a")
 
 print("Naphthalene: ", file=f)
 print ("HOMO: n = 2", file=f)
