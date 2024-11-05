@@ -5,22 +5,23 @@ import scipy.constants as const
 def getEnergy(nx, ny, Ly, Lx):
     
     # Planck's constant divided by 2pi
-    hbar = const.hbar
+    hbar = 6.58 * (10 ** -16)
 
     # Mass of an electron 
-    me = const.electron_mass
+    me = (511000)/((3 * (10 ** 8)) ** 2)
     
     numerator = hbar * hbar * pi * pi
     denominator = 2 * me
     e0constant = numerator/denominator
+    print(e0constant)
 
     x_component = (nx * nx)/(Lx * Lx)
     y_component = (ny * ny)/(Ly * Ly)
     non_constant_component = x_component + y_component
 
-    energy = e0constant * non_constant_component 
+    energy = e0constant * non_constant_component
 
-    return f"{energy:.2e}"
+    return energy
 
 f = open("PY203EIC/PreLabOutput.txt", "a")
 
