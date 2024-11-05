@@ -52,7 +52,7 @@ nx = 3, ny = 3
 
 Tetracene: 
 HOMO: n = 3
-LUMO: n = 3
+LUMO: n = 4
 Lx = 0.97 nm
 Ly = 0.2612 nm
 

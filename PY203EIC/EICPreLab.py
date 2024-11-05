@@ -58,7 +58,7 @@ print("", file=f)
 
 print("Tetracene: ", file=f)
 print ("HOMO: n = 3", file=f)
-print ("LUMO: n = 3", file=f)
+print ("LUMO: n = 4", file=f)
 print("Lx = 0.97 nm", file=f)
 print("Ly = 0.2612 nm", file=f)
 print("", file=f)
