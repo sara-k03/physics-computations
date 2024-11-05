@@ -64,8 +64,8 @@ print("Ly = 0.2612 nm", file=f)
 print("", file=f)
 Lx = 0.97 * (10 ** -9)
 Ly = 0.2612 * (10 ** -9)
-for nx in range(1, 4): # Stops at n = LUMO
-    for ny in range(1, 4):
+for nx in range(1, 5): # Stops at n = LUMO
+    for ny in range(1, 5):
         print("nx = " + str(nx) + ", ny = " + str(ny), file=f)
         print(str(getEnergy(nx, ny, Lx, Ly)) + " eV", file=f)
 
