@@ -2,7 +2,7 @@
 Below are descriptions of the scripts, separated by class. 
 ## PY203 - University Physics III (Modern Physics)
 ### EIC:
-Description to be added
+Link to the Lab Manual: https://drive.google.com/file/d/11XniXMiJR4cYK6svrC_m2AB7cFB1SyZQ/view 
 ### Homework 8: 
 The only question in this folder is Question #17 from Section 8.2 of Modern Physics by Felder & Felder. The question is as follows: <br />
 <br />
