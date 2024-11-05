@@ -13,7 +13,6 @@ def getEnergy(nx, ny, Ly, Lx):
     numerator = hbar * hbar * pi * pi
     denominator = 2 * me
     e0constant = numerator/denominator
-    print(e0constant)
 
     x_component = (nx * nx)/(Lx * Lx)
     y_component = (ny * ny)/(Ly * Ly)
@@ -21,7 +20,7 @@ def getEnergy(nx, ny, Ly, Lx):
 
     energy = e0constant * non_constant_component
 
-    return energy
+    return round(energy, 2)
 
 f = open("PY203EIC/PreLabOutput.txt", "a")
 
