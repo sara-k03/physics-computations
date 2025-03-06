@@ -27,5 +27,5 @@ Z-values and divide by 10,000 to get their average, Zeff. (If you don’t get a 
 <br />
 (f) The Zeff you found shouldn’t equal the actual one we said has been measured for lithium. Give at least two reasons why not. <br />
 
-## PY203 - University Physics III (Modern Physics)
+## Instron Machine Data Analysis
 Contains datasets/analysis for data obtained from the Instron machine when compressing disordered network cubes. 
