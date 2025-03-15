@@ -26,3 +26,6 @@ Z-values and divide by 10,000 to get their average, Zeff. (If you don’t get a 
 (e) For which one did you find the larger value of Zeff? Why does this make sense? <br />
 <br />
 (f) The Zeff you found shouldn’t equal the actual one we said has been measured for lithium. Give at least two reasons why not. <br />
+
+## Instron Machine Data Analysis
+Contains datasets/analysis for data obtained from the Instron machine when compressing disordered network cubes. 
