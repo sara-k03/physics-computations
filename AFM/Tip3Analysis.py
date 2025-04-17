@@ -46,6 +46,10 @@ corr_matrix2 = np.corrcoef(data["amp"], data["opt amp model"])
 R_sq_optimized = corr_matrix2[0,1]**2
 print("R^2 of Optimized Fit:", R_sq_optimized)
 
+peak_index = data['opt amp model'].idxmax()
+w_r = data["freq"][peak_index]
+print("Opt fit peak at:", w_r)
+
 #plot all the data
 plt.figure()
 plt.plot(data["freq"], data["amp"], label="raw data")
@@ -55,9 +59,10 @@ plt.xlabel("Frequency (Hz)")
 plt.ylabel("Amp (V)")
 plt.legend()
 plt.title("Cantilever 3")
-# plt.show()
-plt.savefig("PY411-amplitude-fitting-cantilever3.png", dpi=300)
+plt.show()
+# plt.savefig("PY411-amplitude-fitting-cantilever3.png", dpi=300)
 
 # Peak at: 79969.4
 # R^2 of Initial Guess: 0.8554953630155305
-# # R^2 of Optimized Fit: 0.9742495844399078
+# R^2 of Optimized Fit: 0.9742495844399078
+# Opt fit peak at: 79818.6
