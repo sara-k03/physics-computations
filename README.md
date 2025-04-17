@@ -1,5 +1,8 @@
 # Physics Computations
 Below are descriptions of the scripts, separated by class/project. 
+## PY401 - Classical Mechanics I
+### AFM 
+Insert description here
 ## PY203 - University Physics III (Modern Physics)
 ### EIC:
 Link to the Lab Manual: https://drive.google.com/file/d/11XniXMiJR4cYK6svrC_m2AB7cFB1SyZQ/view 
