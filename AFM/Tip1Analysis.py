@@ -51,18 +51,43 @@ w_r = data["freq"][peak_index]
 print("Opt fit peak at:", w_r)
 
 #plot all the data
-plt.figure()
-plt.plot(data["freq"], data["amp"], label="raw data")
-plt.plot(data["freq"], data["amp model"], label="fit")
-plt.plot(data["freq"], data["opt amp model"], label="optimized fit")
-plt.xlabel("Frequency (Hz)")
-plt.ylabel("Amp (V)")
-plt.legend()
-plt.title("Cantilever 1")
-plt.show()
+# plt.figure()
+# plt.plot(data["freq"], data["amp"], label="raw data")
+# plt.plot(data["freq"], data["amp model"], label="fit")
+# plt.plot(data["freq"], data["opt amp model"], label="optimized fit")
+# plt.xlabel("Frequency (Hz)")
+# plt.ylabel("Amp (V)")
+# plt.legend()
+# plt.title("Cantilever 1")
+# plt.show()
 # plt.savefig("PY411-amplitude-fitting-cantilever1.png", dpi=300)
 
 # Peak at: 69903.0 Hz 
 # R^2 of Initial Guess: 0.9935981076942343
 # R^2 of Optimized Fit: 0.9954701115762682
 # Opt fit peak at: 69916.0
+
+def phase_model(w, wr, Q):
+    return ( ((w*wr)/Q)/ (wr**2 - w**2))
+
+plt.figure()
+#plot the tangent of the raw phase data, making sure to 
+#convert to radians first 
+#this also puts the y axis in units of pi radians
+plt.plot(data["freq"],(np.tan( (np.pi/180) * data["phase"]))/np.pi,'.', label= "raw data")
+
+#save and plot the model 
+#adjust the Q to get a better fit
+Q = 7000 # Lab manual says Q is at least 100
+data["phase model"] = phase_model(data["freq"], w_r, Q)
+plt.plot(data["freq"],(180/np.pi)*data["phase model"]/np.pi, label="fit" )
+
+#adding details to the graph
+plt.legend()
+plt.xlabel("Frequency (Hz)")
+plt.ylabel("Tan(Phi) (Pi Rad)")
+plt.ylim(-10, 10) # because it goes towards infinity otherwise
+plt.title("Cantilever 1")
+
+plt.show()
+# plt.savefig("PY411-phase-fitting-cantilever1.png")
