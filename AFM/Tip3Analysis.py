@@ -55,7 +55,7 @@ plt.xlabel("Frequency (Hz)")
 plt.ylabel("Amp (V)")
 plt.legend()
 plt.title("Cantilever 3")
-plt.show()
+# plt.show()
 plt.savefig("PY411-amplitude-fitting-cantilever3.png", dpi=300)
 
 # Peak at: 79969.4
