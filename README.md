@@ -1,5 +1,7 @@
 # Physics Computations
 Below are descriptions of the scripts, separated by class/project. 
+## PY251 - Introduction to Scientific Computing
+TBA
 ## PY401 - Classical Mechanics I
 ### AFM 
 Link to Lab Manual: https://docs.google.com/document/d/15sq0WAZOQgJcwlzQzG_X-SyhfT78rx3p6Yx2F3oHCo0/edit?usp=sharing 
