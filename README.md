@@ -1,5 +1,7 @@
 # Physics Computations
 Below are descriptions of the scripts, separated by class/project. 
+## MA401 - Partial Differential Equations
+TBA
 ## PY251 - Introduction to Scientific Computing
 TBA
 ## PY401 - Classical Mechanics I
