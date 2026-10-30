@@ -34,6 +34,4 @@ Z_element = sp.integrate(
 Z_element = sp.simplify(Z_element)
 
 Delta = sp.simplify(e * E * Z_element)
-
-print("<200|Z|210> =", Z_element)
-print("Delta       =", Delta)
+print("Δ=", Delta)
